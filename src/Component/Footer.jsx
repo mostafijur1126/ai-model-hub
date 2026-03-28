@@ -38,9 +38,9 @@ const Footer = () => {
             </footer>
             <div>
                 <div className="divider bg-gray-600 h-[1px] my-0"></div>
-                <div className='flex justify-between py-5'>
+                <div className='flex flex-col sm:items-center md:flex-row md:justify-between py-5 text-center md:text-left'>
                     <p className='text-gray-400'>© 2026 AI Hub. All rights reserved.</p>
-                    <p className='text-gray-400 hover:text-[#F52B35] hover:cursor-pointer'>Made with ❤️ for Mostafij..</p>
+                    <p className='text-gray-400 hover:text-[#F52B35] hover:cursor-pointer'>Made with ❤️ Mostafijur</p>
                 </div>
             </div>
             </div>
