@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "title": "ChatGPT",
+    "description": "Versatile AI assistant for writing, coding, and research.\nHandles everyday tasks with multimodal capabilities.",
+    "price": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/2048px-ChatGPT_logo.svg.png",
+    "status": "popular"
+  },
+  {
+    "id": 2,
+    "title": "Claude",
+    "description": "Powerful AI for long-form writing and complex reasoning.\nExcellent at following instructions and analysis.",
+    "price": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Claude_AI_logo.svg/2048px-Claude_AI_logo.svg.png",
+    "status": "popular"
+  },
+  {
+    "id": 3,
+    "title": "Gemini",
+    "description": "Google's multimodal AI integrated with Workspace.\nGreat for research, images, and productivity.",
+    "price": 20,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Google_Gemini_logo.svg/2048px-Google_Gemini_logo.svg.png",
+    "status": "popular"
+  },
+  {
+    "id": 4,
+    "title": "Grok",
+    "description": "Helpful and maximally truthful AI by xAI.\nReal-time knowledge and advanced reasoning.",
+    "price": 0,
+    "image": "https://i.ibb.co.com/3y9rTZds/download.png",
+    "status": "favourite"
+  },
+  {
+    "id": 5,
+    "title": "Perplexity AI",
+    "description": "AI-powered search engine with cited sources.\nFast research and accurate answers.",
+    "price": 20,
+    "image": "https://static.vecteezy.com/system/resources/thumbnails/067/941/679/small_2x/perplexity-ai-logo-rounded-hd-free-png.png",
+    "status": "popular"
+  },
+  {
+    "id": 6,
+    "title": "Midjourney",
+    "description": "Leading AI image generation tool.\nCreates stunning art from text prompts.",
+    "price": 10,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD-396IGtjmadJTSmQtDCTNAWKYAs4dXmfZg&s",
+    "status": "mostwanted"
+  },
+  {
+    "id": 7,
+    "title": "ElevenLabs",
+    "description": "Realistic AI voice synthesis and cloning.\nHigh-quality text-to-speech for content.",
+    "price": 5,
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAFVBMVEX///8AAAClpaWhoaGpqanV1dVra2u8RwCnAAABtklEQVR4nO3VsW4jMRBEQVu70v9/suODA5PanusVUC8lGpiK+PUlSZIkSZIkabDn8fi0jueW8Pj+vI4t4aN97hs9CAlvHyHh/XtT+DrbP/kfna+LwnNr1ui8KNybNXrzVMIbRZidNSLMzhoRZmeNCLOzRoTZWSPC7KwRYXbWiDA7a0SYnTUizM4aEWZnjQizs0aE2VkjwuysEWF21ogwO2tEmJ01IszOGhWF379aedqOMDv7J0LC2VMJVyIknD2VcCVCwtlTCVciJJw9lXAlQsLZUwlXIiScPZVwJULC2VMJVyIknD2VcCVCwtlTCVciJJw9lXAlQsLZUwlXIiScPZVwJULC2VMJVyIknD2VcCVCwtlTCVciJJw9lXAlQsLZUwlXIiScPZVwJULC2VMJVyIknD01IfxPEWZnjQizs0aE2VkjwuysEWF21ogwO2tEmJ01IszOGhFmZ40Is7NGhNlZI8LsrBFhdtaIMDtrRJidNSLMzhoRZmeNCLOzRoTZWaOrwnPorlznReHrfNy783VR+EEREt4/QsL7tyc82ue+0bElfB7tn3y747kllCRJkiRJkrTZD4zpK6kptl/+AAAAAElFTkSuQmCC",
+    "status": "mostwanted"
+  },
+  {
+    "id": 8,
+    "title": "Notion AI",
+    "description": "AI assistant inside Notion workspace.\nSummarizes notes and automates tasks.",
+    "price": 10,
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Notion-logo.svg/2048px-Notion-logo.svg.png",
+    "status": "favourite"
+  }
+]
