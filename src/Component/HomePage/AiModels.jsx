@@ -21,7 +21,7 @@ const AiModels = ({ modelResponse }) => {
     }
     return (
         <div>
-            <div className='w-8/12 mx-auto'>
+            <div className='w-8/12 mx-auto mb-10'>
                 <div className='text-center'>
                     <button className='btn bg-linear-to-r from-pink-500 to-red-500 text-white rounded-full w-50'>Models</button>
                     <button className=' w-50 text-gray-400 hover:text-gray-900 ml-5'>Cart(0)</button>
@@ -36,17 +36,24 @@ const AiModels = ({ modelResponse }) => {
                             color: "bg-gray-400",
                             icon: <FaRegSadTear />
                         };
-                        return <div key={model.id} className='border border-zinc-300 rounded-3xl overflow-hidden'>
+                        return <div key={model.id} className='border border-zinc-300 rounded-3xl overflow-hidden shadow-xl'>
                             <div className='bg-zinc-200 p-8 flex items-center justify-center h-60 relative'>
                                 <img className='w-50' src={model.image} alt="" />
                                 <div className={`badge ${current.color} border-none text-white absolute top-5 rounded-full right-5`}>
                                     {current.icon}
-                                    { model.status?.toUpperCase()}</div>
+                                    {model.status?.toUpperCase()}</div>
                             </div>
                             <div className='p-5 space-y-5'>
                                 <h1 className='text-2xl font-bold'>{model.title}</h1>
                                 <p className='text-gray-400'>{model.description}</p>
-                                <p className='text-2xl font-bold'>${model.price} <span className='text-sm text-gray-400'>/month</span></p>
+                                <p className='text-2xl font-bold'>
+                                    {model.price ? (
+                                        <>
+                                            ${model.price}<span className='text-sm text-gray-400'>/month</span>
+                                        </>
+                                    ) : (<span className='text-green-500'> Free </span>)}
+
+                                </p>
                                 <button className='btn w-full rounded-xl bg-[#E7000B] text-white py-7'>Subscribe Now</button>
                             </div>
                         </div>
