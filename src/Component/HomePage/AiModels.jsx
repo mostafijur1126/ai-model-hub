@@ -16,15 +16,15 @@ const AiModels = ({ modelResponse }) => {
                 </div>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {models.map((model) => {
-                        return <div>
-                            <div>
+                        return <div key={model.id} className='border border-zinc-300 rounded-3xl overflow-hidden'>
+                            <div className='bg-zinc-200 p-8 flex items-center justify-center h-60'>
                                 <img className='w-50' src={model.image} alt="" />
                             </div>
-                            <div>
-                                <h1>{model.title}</h1>
-                                <p>{model.description}</p>
-                                <p>${model.price}/month</p>
-                                <button>Subscribe Now</button>
+                            <div className='p-5 space-y-5'>
+                                <h1 className='text-2xl font-bold'>{model.title}</h1>
+                                <p className='text-gray-400'>{model.description}</p>
+                                <p className='text-2xl font-bold'>${model.price} <span className='text-sm text-gray-400'>/month</span></p>
+                                <button className='btn w-full rounded-xl bg-[#E7000B] text-white py-7'>Subscribe Now</button>
                             </div>
                         </div>
                     })}
