@@ -16,15 +16,18 @@ const statusConfig = {
     }
 }
 
-const ModelCart = ({ model }) => {
+const ModelCart = ({ model,carts, setCart }) => {
     const current = statusConfig[model.status] || {
         color: "bg-gray-400",
         icon: <FaRegSadTear />
     };
     const [isSubscribe, setIsSubscribe] = useState(false);
-    console.log(isSubscribe);
+    // console.log(isSubscribe);
+
+
     const handelSubscribtion =() =>{
-        setIsSubscribe(!isSubscribe)
+        setIsSubscribe(!isSubscribe);
+        setCart([...carts, model]);
     }
     return (
 
