@@ -17,18 +17,18 @@ async function handelModelData() {
 const modelResponse = handelModelData();
 
 function App() {
-  const [activeTab, setActiveTab] = useState("cart")
-  console.log(activeTab);
+  const [activeTab, setActiveTab] = useState("models")
   const [carts, setCart] = useState([]);
+  // console.log(carts);
   return (
     <>
       <Navbar></Navbar>
       <Banner></Banner>
       <ButtonToggol setActiveTab={setActiveTab}></ButtonToggol>
-      {activeTab === "cart" ? 
+      {activeTab === "models" ? 
       (<AiModels carts={carts} setCart={setCart} modelResponse={modelResponse}></AiModels>) 
       : 
-      (<Cart></Cart>)}
+      (<Cart carts={carts}></Cart>)}
 
       <Footer></Footer>
     </>
