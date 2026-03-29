@@ -24,7 +24,7 @@ function App() {
     <>
       <Navbar></Navbar>
       <Banner></Banner>
-      <ButtonToggol setActiveTab={setActiveTab}></ButtonToggol>
+      <ButtonToggol carts={carts} setActiveTab={setActiveTab}></ButtonToggol>
       {activeTab === "models" ? 
       (<AiModels carts={carts} setCart={setCart} modelResponse={modelResponse}></AiModels>) 
       : 

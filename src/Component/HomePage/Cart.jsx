@@ -2,6 +2,7 @@ import React from 'react';
 import { RxCross1 } from 'react-icons/rx';
 
 const Cart = ({ carts }) => {
+    const totalPrice = carts.reduce((sum , items) => sum + items.price, 0);
     console.log(carts);
     return (
         <div className='w-6/12 mx-auto'>
@@ -10,8 +11,7 @@ const Cart = ({ carts }) => {
                 <div className='space-y-5'>
                     {carts.map((cart) => {
                         return (
-                            <div
-                                key={cart.id}
+                            <div key={cart.id}
                                 className='flex items-center gap-10 hover:border-red-500 border border-zinc-400 rounded-3xl p-5'>
                                 <div className='h-25 w-25 flex overflow-hidden'>
                                     <img className='object-contain' src={cart.image} alt="" />
@@ -33,7 +33,7 @@ const Cart = ({ carts }) => {
                 </div>
                 <div className='flex items-center justify-between p-8 bg-black rounded-3xl'>
                     <h2 className='text-white text-4xl font-bold'>Total</h2>
-                    <p className='text-[#FB2C36] text-4xl font-bold'>$0</p>
+                    <p className='text-[#FB2C36] text-4xl font-bold'>${totalPrice}</p>
                 </div>
                 <button className='bg-[#FB2C36] text-white text-2xl btn w-full py-8 rounded-2xl'>Proceed to Checkout</button>
             </div>

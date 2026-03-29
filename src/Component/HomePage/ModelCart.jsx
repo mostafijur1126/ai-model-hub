@@ -27,7 +27,11 @@ const ModelCart = ({ model,carts, setCart }) => {
 
     const handelSubscribtion =() =>{
         setIsSubscribe(!isSubscribe);
-        setCart([...carts, model]);
+        const exists = carts.some(item=> item.id === model.id);
+        if(!exists) {
+            setCart(carts => [...carts, model]);
+            return;
+        }
     }
     return (
 

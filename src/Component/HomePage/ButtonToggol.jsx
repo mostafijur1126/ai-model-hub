@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ButtonToggol = ({setActiveTab}) => {
+const ButtonToggol = ({setActiveTab,carts}) => {
     return (
         <div>
             {/* name of each tab group should be unique */}
@@ -16,7 +16,8 @@ const ButtonToggol = ({setActiveTab}) => {
                     onClick={()=>setActiveTab("cart")}
                     type="radio" 
                     name="my_tabs_1" 
-                    className="tab w-50 rounded-full" aria-label="Cart(0)"  
+                    className="tab w-50 rounded-full" 
+                    aria-label={`Cart(${carts.length})`}  
                     />
                 </div>
         </div>
