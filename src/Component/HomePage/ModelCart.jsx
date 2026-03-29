@@ -23,6 +23,9 @@ const ModelCart = ({ model }) => {
     };
     const [isSubscribe, setIsSubscribe] = useState(false);
     console.log(isSubscribe);
+    const handelSubscribtion =() =>{
+        setIsSubscribe(!isSubscribe)
+    }
     return (
 
         <div>
@@ -45,7 +48,7 @@ const ModelCart = ({ model }) => {
 
                     </p>
                     <button
-                        onClick={() => setIsSubscribe(!isSubscribe)}
+                        onClick={handelSubscribtion}
                         className={`btn w-full rounded-xl ${isSubscribe ? "bg-green-500" : "bg-[#E7000B]"}  text-white py-7`}>
                         { isSubscribe ? "Subscribed" : "Subscribe Now"}
                     </button>

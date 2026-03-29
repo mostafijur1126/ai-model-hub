@@ -6,13 +6,14 @@ const AiModels = ({ modelResponse }) => {
     const models = use(modelResponse);
     // console.log(models)
 
-    
+
     return (
         <div>
             <div className='w-8/12 mx-auto mb-10'>
-                <div className='text-center'>
-                    <button className='btn bg-linear-to-r from-pink-500 to-red-500 text-white rounded-full w-50'>Models</button>
-                    <button className=' w-50 text-gray-400 hover:text-gray-900 ml-5'>Cart(0)</button>
+                {/* name of each tab group should be unique */}
+                <div className="tabs tabs-box justify-center bg-transparent gap-5">
+                    <input type="radio" name="my_tabs_1"defaultChecked className="tab w-50 rounded-full" aria-label="Models" />
+                    <input type="radio" name="my_tabs_1" className="tab w-50 rounded-full" aria-label="Cart(0)"  />
                 </div>
                 <div className='my-10 text-center'>
                     <h1 className='text-5xl font-bold'>Choose Your AI Model</h1>
@@ -20,9 +21,9 @@ const AiModels = ({ modelResponse }) => {
                 </div>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-5'>
                     {models.map((model) => {
-                       
+
                         return <div>
-                        <ModelCart model={model}></ModelCart>
+                            <ModelCart model={model}></ModelCart>
                         </div>
                     })}
                 </div>
