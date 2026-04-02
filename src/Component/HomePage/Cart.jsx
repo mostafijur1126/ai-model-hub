@@ -1,9 +1,12 @@
 import React from 'react';
 import { RxCross1 } from 'react-icons/rx';
 
-const Cart = ({ carts }) => {
+const Cart = ({ carts,setCart }) => {
     const totalPrice = carts.reduce((sum , items) => sum + items.price, 0);
     console.log(carts);
+    function ProcedToCheckout() {
+        setCart([]);
+    }
     return (
         <div className='w-6/12 mx-auto'>
             <div className='py-20 space-y-10'>
@@ -35,7 +38,11 @@ const Cart = ({ carts }) => {
                     <h2 className='text-white text-4xl font-bold'>Total</h2>
                     <p className='text-[#FB2C36] text-4xl font-bold'>${totalPrice}</p>
                 </div>
-                <button className='bg-[#FB2C36] text-white text-2xl btn w-full py-8 rounded-2xl'>Proceed to Checkout</button>
+                <button
+                onClick={ProcedToCheckout}
+                 className='bg-[#FB2C36] text-white text-2xl btn w-full py-8 rounded-2xl'
+                >
+                    Proceed to Checkout</button>
             </div>
         </div>
     );

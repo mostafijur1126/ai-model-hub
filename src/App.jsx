@@ -28,7 +28,7 @@ function App() {
       {activeTab === "models" ? 
       (<AiModels carts={carts} setCart={setCart} modelResponse={modelResponse}></AiModels>) 
       : 
-      (<Cart carts={carts}></Cart>)}
+      (<Cart carts={carts} setCart={setCart}></Cart>)}
 
       <Footer></Footer>
     </>
