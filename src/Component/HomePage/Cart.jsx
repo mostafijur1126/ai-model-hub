@@ -3,9 +3,15 @@ import { RxCross1 } from 'react-icons/rx';
 
 const Cart = ({ carts,setCart }) => {
     const totalPrice = carts.reduce((sum , items) => sum + items.price, 0);
-    console.log(carts);
+    // console.log(carts);
     function ProcedToCheckout() {
         setCart([]);
+       
+    }
+    const handleDelete =(id ) => {
+        const filterDeleted = carts.filter(c => c.id !== id);
+        setCart(filterDeleted);
+        // console.log(filterDeleted);
     }
     return (
         <div className='w-6/12 mx-auto'>
@@ -28,7 +34,7 @@ const Cart = ({ carts,setCart }) => {
                                     <p className=''>/per month</p>
                                 </div>
                                 <div>
-                                    <RxCross1 className='text-2xl hover:text-red-500' />
+                                    <RxCross1 onClick={() => handleDelete(cart.id)} className='text-2xl hover:text-red-500' />
                                 </div>
                             </div>
                         )
